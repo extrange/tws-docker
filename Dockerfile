@@ -1,6 +1,5 @@
 FROM debian:latest
 
-# procps is needed for twsstart.sh on Debian
 RUN apt update && \
     apt install -y --no-install-recommends \
     git tigervnc-standalone-server python3-pip procps wget2 xterm openbox
