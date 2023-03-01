@@ -1,8 +1,8 @@
 FROM debian:latest
 
 RUN apt update && \
-    apt install -y --no-install-recommends \
-    git tigervnc-standalone-server python3-pip procps wget2 xterm openbox
+    apt install --no-install-recommends -y \
+    git libxtst6 tigervnc-standalone-server python3-pip procps wget2 xterm openbox
 
 # Download and install TWS
 RUN wget2 https://download2.interactivebrokers.com/installers/tws/latest-standalone/tws-latest-standalone-linux-x64.sh -O install.sh \

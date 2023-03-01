@@ -4,3 +4,5 @@ services:
     ports:
       - 6080:6080
     init: true  
+    ulimits:
+      nofile: 10000
